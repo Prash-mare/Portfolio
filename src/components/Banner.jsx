@@ -82,31 +82,23 @@ const Banner=()=>{
                                         
                                     
                                     </div>
-                                    <div className=' flex  '>{/* image */}
                                     
-                                    
-                                    {/* {ImageData.map((d)=>(
-                                        <img className="  shadow-lg w-32 h-32  object-cover" src={d.img}/>
-                                    ))} */}
-                                    
-                                    
-                                        </div>
                                         <ImageSlider/>
 
             
                 <div 
-             className=' w-2/3 h-2/3  flex justify-center text-gray-400 dark:bg-slate-100 dark:text-black '>
+             className=' w-full sm:h-full  flex justify-center text-gray-900  dark:text-white dark:bg-black '>
                     <div className='px-4' >
-                    <h3 className='mt-3 text-3xl font-semibold' >Hey! I'm,</h3>
+                    <h3 className='mt-3 text-2xl font-semibold' >Hey! I'm,</h3>
                 <h1 className='mt-1 text-3xl font-bold '>Supriya Singh</h1>
                 <h2 className='mt-3 text-2xl '>I am a {typeEffect}</h2>
-                <p className='mt-3'>The things that wakes me up everyday is my passion.Its the fuel for my journey.I'm a learner and always be.
+                <p className='mt-3 text-xl'>The things that wakes me up everyday is my passion.Its the fuel for my journey.I'm a learner and always be.
                 Looking forward in future to know more about technology and have myself greatly contributing to it.
                 So Have a great day!
                 Never stop dreaming even if peoples out there laughing.</p>
                 <br/>
                 <div className='icon_container space-x-5 mb-5 flex '>
-                    <a href="" className="cursor-pointer animate-pulse hover:bg-orange-500 px-3 py-4 w-14 h-14 rounded-full flex justify-center bg-black dark:bg-white items-center">
+                    <a href="" className="cursor-pointer animate-pulse hover:bg-orange-500 px-3 py-4 w-14 h-14 rounded-full flex justify-center bg-white dark:bg-black dark:text-white items-center">
                     <i className='text-3xl fa-brands fa-github'></i>
 
                     </a>
@@ -120,7 +112,7 @@ const Banner=()=>{
                 </div> 
                 
 
-                <a className='px-3 py-2 bg-white font-bold  text-2xl text-black rounded-full  shadow-lg dark:bg-black dark:text-white ' href="/contact">Contact me</a>
+                <a className='px-3 py-2 bg-white font-bold  text-2xl text-black rounded-full  shadow-lg dark:bg-black dark:text-white dark:border-gray-200 ' href="/contact">Contact me</a>
                     </div>
                     {/* text */}
                 
