@@ -6,18 +6,19 @@ import img4 from "../assets/4.jpeg";
 
 
 export const ImageData=[
-    
-        {text:"first",
-            image:img1
+    {text:"first",
+    img:img1
 },
-{text:"second",
-image:img2
-},
-{text:"third",
-image:img3
-},
-{text:"fourth",
-image:img4
-},
-    
-]
+    {
+
+        text:"second",
+        img:img2
+    },
+    {
+        text:"third",
+        img:img3
+    },
+    {
+        text:"fourth",
+        img:img4
+    }]

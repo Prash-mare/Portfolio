@@ -4,12 +4,9 @@ import bannerbg from '../assets/shape3.svg';
 import { useEffect } from 'react';
 import { useTypewriter } from 'react-simple-typewriter';
 import { ImageData } from '../constants';
-import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-const settings={
-    dots:false,infinite:true,speed:500,slidesToShow:3,slidesToScroll:1
-}
+
+import ImageSlider from './ImageSlider';
+
 
 
 
@@ -65,7 +62,8 @@ const Banner=()=>{
     },[theme])
     return (
         <>
-        
+
+        {/* <ImageSlider/> */}
         <section className='bg-red-300 w-full h-screen flex items-center justify-center'>
         <div className="main  w-2/3 h-2/3  bg-white rounded-lg  duration-100  items-center flex flex-col justify-center dark:bg-slate-800 dark:text-white" 
                                 >
@@ -82,15 +80,18 @@ const Banner=()=>{
                                             ))
                                         }
                                         
+                                    
                                     </div>
-                                    <div className='  flex border justify-center'>{/* image */}
-                                    {/* <Slider {...settings}> */}
-                                    {ImageData.map((d)=>(
-                                        <img className="  shadow-lg w-32 h-32  object-cover" src={d.image}/>
-                                    ))}
-                                    {/* </Slider> */}
+                                    <div className=' flex  '>{/* image */}
+                                    
+                                    
+                                    {/* {ImageData.map((d)=>(
+                                        <img className="  shadow-lg w-32 h-32  object-cover" src={d.img}/>
+                                    ))} */}
+                                    
                                     
                                         </div>
+                                        <ImageSlider/>
 
             
                 <div 
