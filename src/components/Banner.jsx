@@ -65,7 +65,7 @@ const Banner=()=>{
 
         {/* <ImageSlider/> */}
         <section className='bg-red-300 w-full h-screen flex items-center justify-center'>
-        <div className="main  w-2/3 h-2/3  bg-white rounded-lg  duration-100  items-center flex flex-col justify-center dark:bg-slate-800 dark:text-white" 
+        <div className="main   w-2/3   bg-white rounded-lg  duration-100  items-center flex flex-col justify-center dark:bg-slate-800 dark:text-white" 
                                 >
                                     <div className="fixed top-0 right-10 duration-100 dark:bg-slate-800 dark:text-white bg-gray-100 rounded">
                                         
@@ -92,12 +92,9 @@ const Banner=()=>{
                     <h3 className='mt-3 text-2xl font-semibold' >Hey! I'm,</h3>
                 <h1 className='mt-1 text-3xl font-bold '>Supriya Singh</h1>
                 <h2 className='mt-3 text-2xl '>I am a {typeEffect}</h2>
-                <p className='mt-3 text-xl'>The things that wakes me up everyday is my passion.Its the fuel for my journey.I'm a learner and always be.
-                Looking forward in future to know more about technology and have myself greatly contributing to it.
-                So Have a great day!
-                Never stop dreaming even if peoples out there laughing.</p>
+                <p className='mt-3 text-xl'>This is my first portfolio website where i have tried to add some cool features.I hope you like it.</p>
                 <br/>
-                <div className='icon_container space-x-5 mb-5 flex '>
+                <div className='icon_container space-x-5 mb-2 flex '>
                     <a href="" className="cursor-pointer animate-pulse hover:bg-orange-500 px-3 py-4 w-14 h-14 rounded-full flex justify-center bg-white dark:bg-black dark:text-white items-center">
                     <i className='text-3xl fa-brands fa-github'></i>
 
