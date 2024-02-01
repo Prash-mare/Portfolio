@@ -7,15 +7,15 @@ const ImageSlider = () => {
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items:1
+            items:3
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 1
+            items: 3
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 1
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -26,7 +26,7 @@ const ImageSlider = () => {
 
 
         <>
-        <div className='flex flex-col w-full sm:w-1/3 p-5 shadow-lg bg-red-200 dark:bg-black'>
+        <div className='flex flex-col w-full xl:w-1/3 p-5 shadow-lg bg-red-200 dark:bg-black'>
         <div className='text-3xl text-slate-400 dark:text-white'>Timeline</div>
         <Carousel
                 responsive={responsive}
