@@ -4,7 +4,7 @@ import bannerbg from '../assets/shape3.svg';
 import { useEffect } from 'react';
 import { useTypewriter } from 'react-simple-typewriter';
 import { ImageData } from '../constants';
-
+import { links } from '../constants';
 import ImageSlider from './ImageSlider';
 
 
@@ -21,7 +21,8 @@ const Banner=()=>{
     );
     const element=document.documentElement
     const darkQuery=window.matchMedia("(prefers-color-scheme:dark)");
-
+    
+   
     const options=[
         {
             icon:"fa fa-sun",
@@ -55,7 +56,7 @@ const Banner=()=>{
                     localStorage.setItem("theme",'light')
                     break;
                
-                deafult:
+                default:
                 localStorage.removeItem("theme")
                 break;
             }
@@ -63,9 +64,9 @@ const Banner=()=>{
     return (
         <>
 
-        {/* <ImageSlider/> */}
+    
         <section className='bg-red-300 w-full h-screen flex items-center justify-center'>
-        <div className="main   w-2/3   bg-white rounded-lg  duration-100  items-center flex flex-col justify-center dark:bg-slate-800 dark:text-white" 
+        <div className="main w-full max-w-screen-sm p-4 bg-white rounded-lg  duration-100  items-center flex flex-col justify-center dark:bg-slate-800 dark:text-white" 
                                 >
                                     <div className="fixed top-0 right-10 duration-100 dark:bg-slate-800 dark:text-white bg-gray-100 rounded">
                                         
@@ -95,21 +96,23 @@ const Banner=()=>{
                 <p className='mt-3 text-xl'>This is my first portfolio website where i have tried to add some cool features.I hope you like it.</p>
                 <br/>
                 <div className='icon_container space-x-5 mb-2 flex '>
-                    <a href="" className="cursor-pointer animate-pulse hover:bg-orange-500 px-3 py-4 w-14 h-14 rounded-full flex justify-center bg-white dark:bg-black dark:text-white items-center">
-                    <i className='text-3xl fa-brands fa-github'></i>
+               {links.map((d)=>
+        
+                <a href={d.address} className="cursor-pointer animate-pulse hover:bg-orange-500 px-3 py-4 w-14 h-14 rounded-full flex justify-center bg-white dark:bg-black dark:text-white items-center">
+                <i className={d.name}></i>
+                
 
-                    </a>
-                    <a href="" className="cursor-pointer animate-pulse hover:bg-orange-500 px-3 py-4 w-14 h-14 rounded-full flex justify-center bg-white text-black dark:bg-black dark:text-white items-center">
-                    <i className='text-3xl  fa-brands fa-linkedin'></i>
-
-                    </a>
+                </a>
+               )}
+             
 
 
 
                 </div> 
+             <a href="mailto:singhsupriya711@gmail.com?" className='px-3  border bg-white font-bold  text-2xl text-black rounded-full  shadow-lg dark:bg-black dark:text-white dark:border-gray-200 ' >Contact me</a>
+
                 
 
-                <a className='px-3 py-2 bg-white font-bold  text-2xl text-black rounded-full  shadow-lg dark:bg-black dark:text-white dark:border-gray-200 ' href="/contact">Contact me</a>
                     </div>
                     {/* text */}
                 

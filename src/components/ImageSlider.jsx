@@ -7,15 +7,15 @@ const ImageSlider = () => {
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items: 10
+            items:1
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 8
+            items: 1
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 4
+            items: 1
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -26,13 +26,14 @@ const ImageSlider = () => {
 
 
         <>
-        <div className='flex flex-col w-full p-5'>
+        <div className='flex flex-col w-full sm:w-1/3 p-5 shadow-lg bg-red-200 dark:bg-black'>
+        <div className='text-3xl text-slate-400 dark:text-white'>Timeline</div>
         <Carousel
                 responsive={responsive}
                 infinite={true}
                 draggable={true}
                 autoPlay={true}
-                autoPlaySpeed={500}
+                autoPlaySpeed={2000}
                 customTransition='all 2s'
                 focusOnSelect={true}
                 transitionDuration={1000}
@@ -41,8 +42,8 @@ const ImageSlider = () => {
             >
 
                 {ImageData.map((d) => (
-                    <div>
-                        <img className="rounded-full shadow-lg bg-black w-32 h-32  object-cover filter grayscale brightness-100 drop-shadow-lg contrast-100" src={d.img} />
+                    <div className='flex justify-center items-center'>
+                        <img className=" bg-black w-32 h-32 rounded  object-cover filter grayscale brightness-100  contrast-100" src={d.img} />
                     </div>
                 ))}
              </Carousel>

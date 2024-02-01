@@ -91,3 +91,19 @@ export const ImageData=[
     }
 
 ]
+export const links=[
+    {
+        name:"text-3xl fa-brands fa-github",
+        for:"github",
+        address:"https://github.com/supriyasingh711"
+    },{
+        name:"text-3xl fa-brands fa-linkedin",
+        for:"linkedIn",
+        address:"https://www.linkedin.com/in/supriya-singh-741835237/"
+    },
+    {
+        name:"text-3xl fa-solid fa-code",
+        for:"Leetcode",
+        address:"https://leetcode.com/singhsupriya711/"
+    }
+]
