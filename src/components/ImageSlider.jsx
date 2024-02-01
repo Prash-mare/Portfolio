@@ -26,7 +26,7 @@ const ImageSlider = () => {
 
 
         <>
-        <div className='flex flex-col w-full xl:w-1/3 p-5 shadow-lg bg-red-200 dark:bg-black'>
+        <div className='flex flex-col w-full p-5 shadow-lg bg-red-200 dark:bg-black'>
         <div className='text-3xl text-slate-400 dark:text-white'>Timeline</div>
         <Carousel
                 responsive={responsive}
