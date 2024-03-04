@@ -6,15 +6,15 @@ import About from './components/About';
 import Services from './components/Service';
 import Footer from './components/Footer';
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
     <Header/>
-    <Banner/>
+    {/* <Banner/>
     <About/>
     <Services/>
-    <Footer/>
+    <Footer/> */}
     </>
   )
 }
