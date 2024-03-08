@@ -5,16 +5,18 @@ import Banner from './components/Banner';
 import About from './components/About';
 import Services from './components/Service';
 import Footer from './components/Footer';
+import Banner2 from './components/Banner2';
 function App() {
   
 
   return (
     <>
     <Header/>
-    {/* <Banner/>
-    <About/>
+     <Banner2/>
+     
+    {/* <About/>
     <Services/>
-    <Footer/> */}
+    <Footer/>  */}
     </>
   )
 }

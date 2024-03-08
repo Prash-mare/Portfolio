@@ -13,7 +13,8 @@ const Header=()=>{
         <>
        <main>
 <div className="sign">
-    <p>pr</p>
+    <p> </p>
+    
 </div>
 <div className="links">
     <ul>
